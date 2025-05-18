@@ -57,8 +57,8 @@ A comprehensive NestJS-based backend system for managing student information, pi
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd <project-directory>
+   git clone https://github.com/gns-x/g-backend.git
+   cd project-directory-name
    ```
 
 2. **Install dependencies**
