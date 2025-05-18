@@ -2,12 +2,12 @@ import { createTransport } from 'nodemailer';
 import { generatePickupRequestTemplate } from './emailTemplate';
 
 const transporter = createTransport({
-  host: process.env.SMTP_HOST || 'smtp.gmail.com',
-  port: parseInt(process.env.SMTP_PORT || '587'),
+  host: process.env.SMTP_HOST ,
+  port: parseInt(process.env.SMTP_PORT),
   secure: process.env.SMTP_SECURE === 'true',
   auth: {
-    user: 'lacanteen@elitelac.com',
-    pass: 'alxq jiai cjkh wkye',
+    user: ,
+    pass: ,
   },
 });
 
@@ -15,7 +15,7 @@ export class EmailService {
   private async sendEmail(to: string, subject: string, html: string) {
     try {
       await transporter.sendMail({
-        from: '"London Academy" <pickup-system@elitelac.com>',
+        from: '"School" <pickup-system@school.com>',
         to,
         subject,
         html,
